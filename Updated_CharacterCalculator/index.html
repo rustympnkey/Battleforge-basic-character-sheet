@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Character Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Character Calculator</h1>
+        <nav>
+            <button onclick="newGame()">New Game</button>
+            <button onclick="newRound()">New Round</button>
+        </nav>
+    </header>
+    <main>
+        <label for="numCharacters">Number of Characters:</label>
+        <input type="number" id="numCharacters" min="1" value="1">
+        <button onclick="createCharacterSheets()">Create</button>
+        <div id="characterSheets" class="character-container"></div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
